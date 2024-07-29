@@ -26,6 +26,7 @@
               montserrat: ["Montserrat"],
             },
             height: {
+              128: "32rem",
               136: "34rem",
             },
           },
@@ -46,28 +47,33 @@
       <section></section>
 
       <!-- oksana -->
-      <!-- our popular ... section -->
-      <section>
-        <!-- title of section -->
+      <!-- our popular fitness studios -->
+      <section class="px-16">
+        <!-- title -->
         <h2 class="my-12 text-center font-montserrat font-extrabold text-4xl">
           Our Popular Fitness Studios
         </h2>
-        <!-- all popular ... -->
+        <!-- all popular fitness studios -->
         <section
-          class="max-w-7xl m-auto px-16 grid grid-rows-1 grid-cols-3 gap-14"
+          class="max-w-7xl m-auto grid grid-rows-3 md:lg:grid-rows-2 lg:grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 xl:gap-14"
         >
-          <!-- info about one popular ... -->
+          <!-- one popular fitness studio -->
           <section
             class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
           >
-            <!-- image of ... -->
-            <div class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat"></div>
-            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+            <!-- image of fitness studio -->
+            <div
+              class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
+            ></div>
+            <!-- information about popular fitness studio -->
+            <div
+              class="flex-auto px-7 pt-3 pb-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
                   <img
-                    class="w-full h-full"
+                    class="w-full h-auto"
                     src="images/popular_location.svg"
                     alt="location icon"
                   />
@@ -76,27 +82,41 @@
                   >Deutschland, Köln</span
                 >
               </div>
-              <!-- sign up button -->
-              <button
-                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
-              >
-                Sign up
-              </button>
+              <!-- tags -->
+              <div class="flex gap-1">
+                <span class="p-1 rounded-lg bg-white">&#35;boxing</span>
+                <span class="p-1 rounded-lg bg-white">&#35;oldschool</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <!-- sign up button -->
+                <button
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                >
+                  Sign up
+                </button>
+                <!-- prise -->
+                <span class="font-montserrat font-semibold text-xl">from 30&#36;</span>
+              </div>
             </div>
           </section>
 
-          <!-- info about one popular ... -->
+          <!-- one popular fitness studio -->
           <section
             class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
           >
-            <!-- image of ... -->
-            <div class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat"></div>
-            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+            <!-- image of fitness studio -->
+            <div
+              class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
+            ></div>
+            <!-- information about popular fitness studio -->
+            <div
+              class="flex-auto px-7 pt-3 pb-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
                   <img
-                    class="w-full h-full"
+                    class="w-full h-auto"
                     src="images/popular_location.svg"
                     alt="location icon"
                   />
@@ -105,27 +125,42 @@
                   >Deutschland, Köln</span
                 >
               </div>
-              <!-- sign up button -->
-              <button
-                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
-              >
-                Sign up
-              </button>
+              <!-- tags -->
+              <div class="flex gap-1">
+                <span class="p-1 rounded-lg bg-white">&#35;modern</span>
+                <span class="p-1 rounded-lg bg-white">&#35;highquality</span>
+                <span class="p-1 rounded-lg bg-white">&#35;fun</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <!-- sign up button -->
+                <button
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                >
+                  Sign up
+                </button>
+                <!-- prise -->
+                <span class="font-montserrat font-semibold text-xl">from 30&#36;</span>
+              </div>
             </div>
           </section>
 
-          <!-- info about one popular ... -->
+          <!-- one popular fitness studio -->
           <section
             class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
           >
-            <!-- image of ... -->
-            <div class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat"></div>
-            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+            <!-- image of fitness studio -->
+            <div
+              class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
+            ></div>
+            <!-- information about popular fitness studio -->
+            <div
+              class="flex-auto px-7 pt-3 pb-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
                   <img
-                    class="w-full h-full"
+                    class="w-full h-auto"
                     src="images/popular_location.svg"
                     alt="location icon"
                   />
@@ -134,12 +169,22 @@
                   >Deutschland, Köln</span
                 >
               </div>
-              <!-- sign up button -->
-              <button
-                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
-              >
-                Sign up
-              </button>
+              <!-- tags -->
+              <div class="flex gap-1">
+                <span class="p-1 rounded-lg bg-white">&#35;yoga</span>
+                <span class="p-1 rounded-lg bg-white">&#35;musik</span>
+                <span class="p-1 rounded-lg bg-white">&#35;fitnesscourses</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <!-- sign up button -->
+                <button
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                >
+                  Sign up
+                </button>
+                <!-- prise -->
+                <span class="font-montserrat font-semibold text-xl">from 30&#36;</span>
+              </div>
             </div>
           </section>
         </section>
