@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find your Dream</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              beige: "#DDC7BB",
+            },
+            backgroundImage: {
+              "popular-image-1": "url('images/popular_image1.png')",
+              "popular-image-2": "url('images/popular_image2.png')",
+              "popular-image-3": "url('images/popular_image3.png')",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat"],
+            },
+            height: {
+              136: "34rem",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- ab hier sia -->
@@ -25,13 +41,112 @@
     <main>
       <section></section>
       <!-- ab hier ioan -->
-       <section></section>
       <section></section>
       <section></section>
+      <section></section>
+
       <!-- oksana -->
+      <!-- our popular ... section -->
+      <section>
+        <!-- title of section -->
+        <h2 class="my-12 text-center font-montserrat font-extrabold text-4xl">
+          Our Popular Fitness Studios
+        </h2>
+        <!-- all popular ... -->
+        <section
+          class="max-w-7xl m-auto px-16 grid grid-rows-1 grid-cols-3 gap-14"
+        >
+          <!-- info about one popular ... -->
+          <section
+            class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
+          >
+            <!-- image of ... -->
+            <div class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat"></div>
+            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+              <!-- location -->
+              <div class="flex items-center gap-2.5">
+                <figure class="w-6 h-6 flex-none">
+                  <img
+                    class="w-full h-full"
+                    src="images/popular_location.svg"
+                    alt="location icon"
+                  />
+                </figure>
+                <span class="font-montserrat font-bold text-xl"
+                  >Deutschland, Köln</span
+                >
+              </div>
+              <!-- sign up button -->
+              <button
+                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+              >
+                Sign up
+              </button>
+            </div>
+          </section>
+
+          <!-- info about one popular ... -->
+          <section
+            class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
+          >
+            <!-- image of ... -->
+            <div class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat"></div>
+            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+              <!-- location -->
+              <div class="flex items-center gap-2.5">
+                <figure class="w-6 h-6 flex-none">
+                  <img
+                    class="w-full h-full"
+                    src="images/popular_location.svg"
+                    alt="location icon"
+                  />
+                </figure>
+                <span class="font-montserrat font-bold text-xl"
+                  >Deutschland, Köln</span
+                >
+              </div>
+              <!-- sign up button -->
+              <button
+                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+              >
+                Sign up
+              </button>
+            </div>
+          </section>
+
+          <!-- info about one popular ... -->
+          <section
+            class="flex flex-col overflow-hidden h-136 rounded-2xl bg-beige"
+          >
+            <!-- image of ... -->
+            <div class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat"></div>
+            <div class="flex-auto px-7 py-5 flex flex-col justify-between">
+              <!-- location -->
+              <div class="flex items-center gap-2.5">
+                <figure class="w-6 h-6 flex-none">
+                  <img
+                    class="w-full h-full"
+                    src="images/popular_location.svg"
+                    alt="location icon"
+                  />
+                </figure>
+                <span class="font-montserrat font-bold text-xl"
+                  >Deutschland, Köln</span
+                >
+              </div>
+              <!-- sign up button -->
+              <button
+                class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+              >
+                Sign up
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+
       <section></section>
-      <section></section>
-      <!-- bis -->
+
       <!-- ab hier Ummey -->
       <section></section>
     </main>
