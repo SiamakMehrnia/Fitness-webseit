@@ -5,27 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find your Dream</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- ab hier sia -->
     <header>
-      <section></section>
+      <nav class="bg-clifford text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="#" class="text-3xl font-bold">Find your Dream</a>
+          <ul class="flex items-center space-x-4">
+            <li><a href="#" class="text-white hover:text-gray-300"><img src="search-interface-symbol.png" alt="" class="w-9 hover:text-gray-300" ></a></li>
+            <li>
+            <li><a href="#" class="text-white hover:text-gray-300">Home</a></li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-gray-300">Contact</a>
+            </li>
+            <li
+              class="border-double border-4 rounded border-withe text-white hover:text-gray-300 "
+            >
+              <button class="p-1 ">Sing in</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <section></section>
+      <section>
+        <div class="flex h-screen border-4 container mx-auto">
+          <div class="w-6/12 m-8"><img src="https://t4.ftcdn.net/jpg/06/32/57/31/360_F_632573146_A0yW9SlMAMD3gMcaggbey4moP5j18vYX.jpg" alt="" class="" /></div>
+          <div class="w-6/12 m-8">
+            <h1 class="font-extrabold text-2xl tex text-center pb-0.5">
+              Finde your Deram house
+            </h1>
+            <p class="leading-8 font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              quibusdam, veritatis dolorem explicabo expedita placeat aliquid
+              sunt excepturi quasi! Quaerat voluptatum quo reiciendis
+              laboriosam, similique error architecto eum pariatur dolorum?
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- ab hier ioan -->
-       <section></section>
+      <section></section>
       <section></section>
       <section></section>
       <!-- oksana -->
