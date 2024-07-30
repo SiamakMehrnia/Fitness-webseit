@@ -16,17 +16,22 @@
             colors: {
               clifford: "#da373d",
               beige: "#DDC7BB",
+              yellow: "#fef7f2",
             },
             backgroundImage: {
               "popular-image-1": "url('images/popular_image1.png')",
               "popular-image-2": "url('images/popular_image2.png')",
               "popular-image-3": "url('images/popular_image3.png')",
               "popular-image-4": "url('images/popular_image4.png')",
+              "say-image-1": "url('images/say_image1.png')",
+              "say-image-2": "url('images/say_image2.png')",
+              "say-image-3": "url('images/say_image3.png')",
             },
             fontFamily: {
               montserrat: ["Montserrat"],
             },
             height: {
+              104: "26rem",
               128: "32rem",
               136: "34rem",
             },
@@ -49,9 +54,9 @@
 
       <!-- oksana -->
       <!-- our popular fitness studios -->
-      <section class="px-16">
+      <section class="px-8 py-20">
         <!-- title -->
-        <h2 class="my-12 text-center font-montserrat font-extrabold text-4xl">
+        <h2 class="mb-12 text-center font-montserrat font-extrabold text-4xl">
           Our Popular Fitness Studios
         </h2>
         <!-- all popular fitness studios -->
@@ -67,7 +72,9 @@
               class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -110,7 +117,9 @@
               class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -154,7 +163,9 @@
               class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -191,7 +202,61 @@
         </section>
       </section>
 
-      <section></section>
+      <!-- what people say about -->
+      <div class="bg-yellow">
+        <section class="px-8 py-20">
+          <!-- title -->
+          <h2 class="mb-12 text-center font-montserrat font-extrabold text-4xl">
+            What People Say About Max Gym
+          </h2>
+          <!-- all feedbacks -->
+          <section
+            class="max-w-7xl m-auto grid grid-rows-3 md:grid-rows-2 lg:grid-rows-1 grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-10 xl:gap-14"
+          >
+            <!-- one feedback -->
+            <section
+              class="md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="h-2/5 bg-say-image-1 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+              ></div>
+            </section>
+
+            <!-- one feedback -->
+            <section
+              class="md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="h-2/5 bg-say-image-2 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+              ></div>
+            </section>
+
+            <!-- one feedback -->
+            <section
+              class="md:col-start-2 lg:col-start-3 md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="h-2/5 bg-say-image-3 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+              ></div>
+            </section>
+          </section>
+        </section>
+      </div>
 
       <!-- ab hier Ummey -->
       <section></section>
