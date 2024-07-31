@@ -28,6 +28,9 @@
               "say-image-1": "url('images/say_image1.png')",
               "say-image-2": "url('images/say_image2.png')",
               "say-image-3": "url('images/say_image3.png')",
+              "person-image-1": "url('images/person_image1.png')",
+              "person-image-2": "url('images/person_image2.png')",
+              "person-image-3": "url('images/person_image3.png')",
             },
             fontFamily: {
               montserrat: ["Montserrat"],
@@ -45,9 +48,9 @@
   <body>
     <!-- ab hier sia -->
     <header>
-      <nav class="bg-beige text-darkbeige flex justify-center font-montserrat ">
-        <div class="container max-w-7xl ">
-          <div class="flex justify-between gap-1 ">
+      <nav class="bg-beige text-darkbeige flex justify-center font-montserrat">
+        <div class="container max-w-7xl">
+          <div class="flex justify-between gap-1">
             <a href="#" class="text-3xl font-bold self-start text-darkbeige p-5"
               >Max Gym</a
             >
@@ -150,7 +153,7 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
             <div
@@ -195,7 +198,7 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
             <div
@@ -241,7 +244,7 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
             <div
@@ -300,12 +303,36 @@
             >
               <!-- image of fitness studio -->
               <div
-                class="h-2/5 bg-say-image-1 bg-cover bg-no-repeat bg-center"
+                class="flex-none h-2/5 bg-say-image-1 bg-cover bg-no-repeat bg-center"
               ></div>
               <!-- information about feedback -->
               <div
-                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
-              ></div>
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-1 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Sarah</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
             </section>
 
             <!-- one feedback -->
@@ -314,12 +341,36 @@
             >
               <!-- image of fitness studio -->
               <div
-                class="h-2/5 bg-say-image-2 bg-cover bg-no-repeat bg-center"
+                class="flex-none h-2/5 bg-say-image-2 bg-cover bg-no-repeat bg-center"
               ></div>
               <!-- information about feedback -->
               <div
-                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
-              ></div>
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-2 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Michael</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
             </section>
 
             <!-- one feedback -->
@@ -328,12 +379,36 @@
             >
               <!-- image of fitness studio -->
               <div
-                class="h-2/5 bg-say-image-3 bg-cover bg-no-repeat bg-center"
+                class="flex-none h-2/5 bg-say-image-3 bg-cover bg-no-repeat bg-center"
               ></div>
               <!-- information about feedback -->
               <div
-                class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
-              ></div>
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-3 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Emily</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
             </section>
           </section>
         </section>
