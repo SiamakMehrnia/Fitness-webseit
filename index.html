@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -16,17 +17,28 @@
             colors: {
               clifford: "#da373d",
               beige: "#DDC7BB",
+              darkbeige: "#2B1B12;",
+              yellow: "#fef7f2",
+              mybrown: '#DDC7BB',
+              brown: '#4F3527',
             },
             backgroundImage: {
               "popular-image-1": "url('images/popular_image1.png')",
               "popular-image-2": "url('images/popular_image2.png')",
               "popular-image-3": "url('images/popular_image3.png')",
               "popular-image-4": "url('images/popular_image4.png')",
+              "say-image-1": "url('images/say_image1.png')",
+              "say-image-2": "url('images/say_image2.png')",
+              "say-image-3": "url('images/say_image3.png')",
+              "person-image-1": "url('images/person_image1.png')",
+              "person-image-2": "url('images/person_image2.png')",
+              "person-image-3": "url('images/person_image3.png')",
             },
             fontFamily: {
               montserrat: ["Montserrat"],
             },
             height: {
+              104: "26rem",
               128: "32rem",
               136: "34rem",
             },
@@ -38,20 +50,161 @@
   <body>
     <!-- ab hier sia -->
     <header>
-      <section></section>
+      <nav class="bg-beige text-darkbeige flex justify-center font-montserrat">
+        <div class="container max-w-7xl">
+          <div class="flex justify-between gap-1">
+            <a href="#" class="text-3xl font-bold self-start text-darkbeige p-5"
+              >Max Gym</a
+            >
+            <ul class="flex">
+              <li class="p-6">
+                <a
+                  href="#"
+                  class="text-darkbeige hover:text-slate-50 font-semibold"
+                  >Home</a
+                >
+              </li>
+              <li class="p-6">
+                <a
+                  href="#"
+                  class="text-darkbeige hover:text-slate-50 font-semibold"
+                  >About</a
+                >
+              </li>
+              <li class="p-6">
+                <a
+                  href="#"
+                  class="text-darkbeige hover:text-slate-50 font-semibold"
+                  >Contact</a
+                >
+              </li>
+              <li class="p-4">
+                <a href="#" class="text-darkbeige hover:text-slate-50 self-end"
+                  ><img
+                    src="search-interface-symbol.png"
+                    alt=""
+                    class="w-9 hover:hover:img-slate-50"
+                /></a>
+              </li>
+              <li
+                class="rounded border-black text-black hover:text-slate-50 p-3"
+              >
+                <button
+                  class="p-3 bg-darkbeige text-white rounded-lg font-semibold"
+                >
+                  Sing in
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <section></section>
+      <section class="font-montserrat flex justify-center">
+        <div class="flex justify-center max-w-7xl">
+          <div class="w-6/12 m-8 flex justify-center fix">
+            <img
+              src="https://t3.ftcdn.net/jpg/03/06/60/24/360_F_306602431_N6fWyRn0Xhs24x7jw4soPvy2zFWziz6w.jpg"
+              alt=""
+              class="max-h-96"
+            />
+          </div>
+          <div class="w-6/12 m-8 flex justify-center flex-col">
+            <h1
+              class="font-extrabold text-7xl text-darkbeige text-center pb-0.5"
+            >
+              Finde your Dream Gym
+            </h1>
+            <p
+              class="text-base font-semibold pt-5 leading-7 text-darkbeige font-montserrat"
+            >
+              Are you ready to embark on a journey towards a healthier and more
+              active lifestyle? Welcome to Max Gym, your ultimate destination
+              for all things fitness! Whether you’re just starting out or
+              looking to take your workouts to the next level, we’ve got you
+              covered.
+            </p>
+            <div class="flex justify-center mt-6">
+              <button class="p-3 bg-darkbeige text-white rounded-lg">
+                <a href="">Log In</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- ab hier ioan -->
-      <section></section>
-      <section></section>
-      <section></section>
+       <section>
+        <ul class="max-w-7xl bg-mybrown px-4 py-10 rounded-3xl gap-3 flex justify-stretch flex-wrap text-brown font-bold mx-60 ">
+          <li>
+            <button class="flex bg-white p-3 mx-2 text-left rounded-md w-60 hover:bg-brown hover:text-white" >Location <img src="vector.png" alt="vector" class="mx-32 p-1"></button>
+          </li>
+          <li>
+            <button class="flex bg-white p-3 mx-2 text-left rounded-md w-60 hover:bg-brown hover:text-white">Courses <img src="Vector1.png" alt="vector1" class="mx-32 p-1"></button>
+          </li>
+          <li>
+            <button class="flex bg-white p-3 mx-2 text-left rounded-md w-60 hover:bg-brown hover:text-white">Nutrition <img src="Vector2.png" alt="vector2" class="mx-32 p-1"></button>
+          </li>
+          <li>
+            <button class="bg-black p-3 mx-8 text-white rounded-md w-40 hover:bg-white hover:text-black">Sign up</button>
+          </li>
+        </ul>
 
+       </section>
+      <section class="max-w-7xl container mx-auto">
+        <ul class="flex justify-between my-40 mx-20 flex-wrap gap-10">
+          <li><img src="Studio.jpg" alt="Fitness-Studio" class="rounded-2xl text-brown"></li>
+          <li class="space-y-12 text-brown">
+            <h1 class="text-5xl font-bold">Lots of gym. Little price</h1>
+            <p class="font-bold">We're giving you a bonus: <br>Train for 2 months free of charge <br>and then pay only €24.90* per month <br>instead of €39.90.</p>
+            <ul class="flex gap-16">
+              <li>
+                <h1 class="text-5xl font-bold">230+</h1>
+                <p class="">Studios in Europe</p>
+              </li>
+              <li>
+                <h1 class="text-5xl font-bold">365</h1>
+                <p class="">Days in the year</p>
+              </li>
+              <li>
+                <h1 class="text-5xl font-bold">100%</h1>
+                <p class="">Training</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="max-w-7xl">
+        <h1 class="flex justify-center font-bold text-5xl text-brown my-10">Why choose us</h1>
+        <p class="flex justify-center text-center">Are you looking for something non-binding? Or something permanent? <br>No matter what you want, we have it. You can cancel the Flex contract on a monthly basis. <br>With our long-term contracts, you get the complete package of services and advantages.</p>
+        <ul class="flex justify-between gap-12 mx-40 my-20 flex-wrap">
+          <li class=" bg-mybrown min-w-60 h-60 px-5 pt-5 rounded-2xl">
+            <img src="https://s3-alpha-sig.figma.com/img/9ce0/3689/33480539c65280be6267eabfe28175ed?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Bph~eiwgRtS~-dgfdAx6hm5GYwsgr1XlylFBkzBV3xQBsX5F~O~V41Hu~rU5-tcgcZ4CEva~hhri9epHweCeJxL1pm5TNMPgf7Qpr4MqMIOjHPqd793MBXusVUcdxkycQeqmf1obDTyovfY4VbwCluB4w6eprxhZ2mCiTzlfxNSct6gvL6LA-ZN8naOdlbMbQxZYtyyYKcRbU-4aNZVdTu074ctH9NspZ9qR9Q~Mes3AMgTVJIM1ivOgcFgBs0TYV4fiX5RyIopkCo-rSUjkQNnUGyGncUlyWtqpe3-6jINM3369KOWg70aJPAeLhKpYtjAUsNRb1Q91vSOaPy-bVQ__" alt="map pin" class="w-14 h-14 bg-white p-1.5 rounded-2xl">
+            <H6 class="font-bold mt-7 mb-5">Expert Guidance</H6>
+            <p class="mt-3">Benefit from our team's <br>seasoned expertise for a <br>smooth training experince</p>
+          </li>
+          <li class=" bg-mybrown min-w-60 h-60 px-5 pt-5 rounded-2xl">
+            <img src="https://s3-alpha-sig.figma.com/img/42ef/44be/01c99367e8b77e75fe39cf708e391865?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=czakHwPfh5cnpDidmcSqgw4nMk5L7lwNb9w5LcqS8ZWx2tQ8UxpTolFSI4-200aruqUULvBXOhVeaZ~PJ2q0zDyFDMxCwv-MmIaomaAcpRoDi8Oy4Jud53q03YlTcvZGg-serJw~aBXPk2NhvXktYxHJWjSU7bpNwv4NTWc5phSflC7ekxiiiWN0POqG21bJsbZA8E1E9-1wz5KHAqqbUXge4t0YQUWjpQ2zceNRMleaazyo5eNNrYwRks8ryCKMsFWOCchtKW2Q6WKkbwZ2Xlmr9BUpBv~KiMPmXWIkGmRmjJdpRKbgbKUY4eVSwfY1b--VHLP8m5vsZAfLCxQDzQ__" alt="alpha sig" class="w-14 h-14 bg-white p-1.5 rounded-2xl">
+            <H6 class="font-bold mt-7 mb-5">Personalized Service</H6>
+            <p>Our services adapt to your <br>unique needs, making your <br>training stress free</p>
+          </li>
+          <li class=" bg-mybrown min-w-60 h-60 px-5 pt-5 rounded-2xl">
+            <img src="https://s3-alpha-sig.figma.com/img/a830/d02d/d5151703b3d86bb374d2f3a312ccc17a?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=erV7YxkIrzEjVj6ZWAbTv1jy86yYW8BhSZwYQDgCs~Gu4SQvwy62EV5Z-2W6qa1DtbN72xPk2HsUK~I2SRIba7Ri2OnVp3qXT8XvgMa9axVUMPg8sjZkU9Ba2xhk5L4-3PMjc8ZmdEV9r0pckpOlNaRUkSp-Xh6FSjpxOlOElB0p2A2UEIO~pc7kr14uyYTRTkzvz3Ks3WZ6zao7Y6VAIwRB01t2LyGhxNHbS~ABRJcHDEYpgapvi9RbKPs25DJO3~tTiu1y3-hlYWTV9gxoGYA7mmHr8OfVpFxHaEzujWjD3RVngoJOxD~gCuW0jfJJYYj-FSLjI4pmvckNruyovQ__" alt="s3 alpha sig" class="w-14 h-14 bg-white p-1.5 rounded-2xl">
+            <H6 class="font-bold mt-7 mb-5"> Transparent Process</H6>
+            <p>Stay informed with our <br>clear and honest aproach<br>to make you fit </p>
+          </li>
+          <li class=" bg-mybrown min-w-60 h-60 px-5 pt-5 rounded-2xl">
+            <img src="https://s3-alpha-sig.figma.com/img/6c7a/f334/58d83ebe9e6c9f474aa8e0e5abbdd58c?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YpB5DlEoEMlJD4zRXAC3ju-sIvecYXkblMiP18KY6kUGb2PlNXefoXrJ7IiSYZDDl4sCFKJjy8k8wmj2YwOIkaoeJDWexhxi18bXSf8bgTkGkenglY-JqFoBdzV8gajFd6JqupxUFB2qiNWAAkOPJe4vI4lqUzginGqbLyarar25psUkZcuKyC~8AS6pwdrgs10aBxAs30se9ntOWtU9D~bj7S9yXXZHGFs93Maqkbi4NYVp8WU4qjKEHq4NtPQzOL70WnPr~3D1k9KLyDAGSkcHfpvzR4I9jhTk3zKQHThy4JD9itfsjwqIuAqUokridKwRjZSTreyJPUYe374p8A__" alt="s4 alpha sig" class="w-14 h-14 bg-white p-1.5 rounded-2xl">
+            <H6 class="font-bold mt-7 mb-5">Exceptional Support</H6>
+            <p>Providing peace of mind <br>with our responsive and <br>attentive customer</p>
+          </li>
+        </ul>
+      </section>
       <!-- oksana -->
       <!-- our popular fitness studios -->
-      <section class="px-16">
+      <section class="px-8 py-20">
         <!-- title -->
-        <h2 class="my-12 text-center font-montserrat font-extrabold text-4xl">
+        <h2 class="mb-12 text-center font-montserrat font-extrabold text-4xl">
           Our Popular Fitness Studios
         </h2>
         <!-- all popular fitness studios -->
@@ -64,10 +217,12 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-1 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto px-10 pt-5 pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -89,7 +244,7 @@
               <div class="flex justify-between items-center">
                 <!-- sign up button -->
                 <button
-                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold hover:bg-white hover:text-black"
                 >
                   Sign up
                 </button>
@@ -107,10 +262,12 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-2 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto px-10 pt-5 pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -133,7 +290,7 @@
               <div class="flex justify-between items-center">
                 <!-- sign up button -->
                 <button
-                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold hover:bg-white hover:text-black"
                 >
                   Sign up
                 </button>
@@ -151,10 +308,12 @@
           >
             <!-- image of fitness studio -->
             <div
-              class="h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
+              class="flex-none h-2/3 bg-popular-image-3 bg-cover bg-no-repeat bg-top"
             ></div>
             <!-- information about popular fitness studio -->
-            <div class="flex-auto px-10 pt-5 pb-7 md:p-5 flex flex-col justify-between">
+            <div
+              class="flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col justify-between"
+            >
               <!-- location -->
               <div class="flex items-center gap-2.5">
                 <figure class="w-6 h-6 flex-none">
@@ -177,7 +336,7 @@
               <div class="flex justify-between items-center">
                 <!-- sign up button -->
                 <button
-                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold"
+                  class="w-24 h-10 rounded-lg bg-black text-white font-montserrat text-sm font-bold hover:bg-white hover:text-black"
                 >
                   Sign up
                 </button>
@@ -191,7 +350,133 @@
         </section>
       </section>
 
-      <section></section>
+      <!-- what people say about -->
+      <div class="bg-yellow">
+        <section class="px-8 py-20">
+          <!-- title -->
+          <h2 class="mb-12 text-center font-montserrat font-extrabold text-4xl">
+            What People Say About Max Gym
+          </h2>
+          <!-- all feedbacks -->
+          <section
+            class="max-w-7xl m-auto grid grid-rows-3 md:grid-rows-2 lg:grid-rows-1 grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-10 xl:gap-14"
+          >
+            <!-- one feedback -->
+            <section
+              class="md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="flex-none h-2/5 bg-say-image-1 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-1 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Sarah</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
+            </section>
+
+            <!-- one feedback -->
+            <section
+              class="md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="flex-none h-2/5 bg-say-image-2 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-2 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Michael</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
+            </section>
+
+            <!-- one feedback -->
+            <section
+              class="md:col-start-2 lg:col-start-3 md:col-span-2 lg:col-span-1 flex flex-col overflow-hidden h-104 rounded-2xl bg-beige"
+            >
+              <!-- image of fitness studio -->
+              <div
+                class="flex-none h-2/5 bg-say-image-3 bg-cover bg-no-repeat bg-center"
+              ></div>
+              <!-- information about feedback -->
+              <div
+                class="overflow-hidden flex-auto p-5 sm:px-10 sm:pt-5 sm:pb-7 md:p-5 flex flex-col gap-4"
+              >
+                <div class="flex gap-4">
+                  <!-- photo of person -->
+                  <div
+                    class="w-14 h-14 rounded-full bg-person-image-3 bg-cover"
+                  ></div>
+                  
+                  <div class="flex flex-col justify-between">
+                    <!-- the name of person -->
+                    <span class="font-montserrat font-bold text-xl"
+                      >Emily</span
+                    >
+                    <!-- the city of person -->
+                    <span class="font-montserrat font-semibold text-base"
+                      >Berlin</span
+                    >
+                  </div>
+                </div>
+                <!-- the text of feedback -->
+                <p class="overflow-hidden font-montserrat text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium a sed necessitatibus esse quod perspiciatis
+                  aperiam voluptatum nihil assumenda voluptate!
+                </p>
+              </div>
+            </section>
+          </section>
+        </section>
+      </div>
 
       <!-- ab hier Ummey -->
       <section></section>
