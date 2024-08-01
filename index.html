@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find your Dream</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f58e0280ec.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -480,66 +481,78 @@
 
       <!-- ab hier Ummey -->
       <section>
-      <div> 
-          <h1>Do You Have Any Questions?Get Help From Us</h1>
-        
-      <div>
-        <img src=""alt=""/>
-        <p>Chat live with our support team</p>
-        <img src="" alt=""/>
-        <p>Browse our FAQ</p>
+      <div class="max-h-96 sm:grid-cols-2 lg:grid-cols-3 "> 
+          <h1 class="font-montserrat text-5xl text-center pt-20  font-bold font-montserrat text-brown">Do You Have Any Questions?<br/>Get Help From Us</h1>
       </div>
-      <form>
-        <input type="email" name="usermail"id="usermail"placeholder="Enter your email address...."reuired/>
-        <button>
-        <input type="submit"/>
+        
+      <div class="flex gap-1 justify-center p-10 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <img src="1.png"alt=""class="mr-0"/>
+        <p class="font-bold font-montserrat text-base mr-10">Chat live with our support team</p>
+        <img src="1.png"alt=""/>
+        <p  class="font-bold font-montserrat text-base">Browse our FAQ</p>
+      </div class="">
+      <form class="flex justify-center gap-3 p-30 "> 
+        <img src="mail.png" alt="mail"/>
+        <input type="email" id="usermail" placeholder="Enter your email address...." class="rounded-lg font-montserrat text-brown bg-mybrown pr-40 mr-1" required/>
+        <button class="rounded-lg bg-black text-white px-10 py-3 font-bold">
+        Submit
         </button>
       </form>
       </div>
     </section>
     </main>
-    <footer class="bg-slate-800 p-4 text-white p-8">
-     <div class="container mx-auto flex flex-wrap justify-around">
+    <footer class="bg-mybrown p-6 text-brown p-8 my-20">
+     <div class="container mx-auto flex flex-wrap justify-around leading-8 max-h-96 font-bold sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <img src="" alt=""/>
-          <h2 class="text-xl mb-4">Bringing you closer to our dream home,one click at a time.</h2>
+          <h2 class="text-xl mb-4 font-bold">Transform your life <br> With Max Gym</h2>
         </div>
         <div>
           <h2 class="text-xl mb-4">ABout</h2>
           <ul class="">
-            <li><a href="">Our Story</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Our Team</a></li>
-            <li><a href="">Resources</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Our Story</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Careers</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Our Team</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Resources</a></li>
           </ul>
        </div>
       <div>
         <h2 class="text-xl mb-4">Support</h2>
         <ul class="">
-          <li class=""><a href="">FAQ</a></li>
-          <li class=""><a href="">Contract Us</a></li>
-          <li class=""><a href="">Help Center</a></li>
-          <li class=""><a href="">Terms Of ervices</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">FAQ</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Contract Us</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Help Center</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Terms Of ervices</a></li>
         </ul>
       </div> 
       <div>
         <h2 class="text-xl mb-4">Find Us</h2>
         <ul class="">
-          <li class=""><a href="">Events</a></li>
-          <li class=""><a href="">Locations</a></li>
-          <li class=""><a href="">Newsletter</a></li>
+          
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Events</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Locations</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Newsletter</a></li>
         </ul>
       </div>
       <div> 
         <h2 class="text-xl mb-4">Our Social</h2>
         <ul class="">
-          <img src="" alt="">
-          <li class=""><a href="">instagram</a></li>
-          <img src="" alt="">
-          <li class=""><a href="">Facebook</a></li>
-          <img src="" alt="" class="">
-          <li class=""><a href="">Twitter(X)</a></li>
-         </ul>
+          <ul class="flex">
+            <i class="fa-brands fa-instagram"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1">instagram</a></li>
+          </ul>
+          <ul> 
+            <i class="fa-brands fa-facebook"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1"></i>Facebook</a></li>
+          </ul> 
+          <ul> 
+            <i class="fa-brands fa-x-twitter"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1">Twitter(X)</a></li>
+          </ul>
+         
+
+        </ul>
       </div>  
        
       </div>
