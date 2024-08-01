@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find your Dream</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f58e0280ec.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -56,7 +57,7 @@
             <a href="#" class="text-3xl font-bold self-start text-darkbeige p-5"
               >Max Gym</a
             >
-            <ul class="flex">
+            <ul class="flex max-md:flex-wrap">
               <li class="p-6">
                 <a
                   href="#"
@@ -78,12 +79,12 @@
                   >Contact</a
                 >
               </li>
-              <li class="p-4">
-                <a href="#" class="text-darkbeige hover:text-slate-50 self-end"
+              <li class="p-4 ">
+                <a href="#" class="text-darkbeige hover:text-slate-50 self-end max-md:flex-none max-md:w-full"
                   ><img
                     src="search-interface-symbol.png"
                     alt=""
-                    class="w-9 hover:hover:img-slate-50"
+                    class="w-9 hover:hover:img-slate-50 "
                 /></a>
               </li>
               <li
@@ -92,7 +93,7 @@
                 <button
                   class="p-3 bg-darkbeige text-white rounded-lg font-semibold"
                 >
-                  Sing in
+                  Sing up
                 </button>
               </li>
             </ul>
@@ -112,12 +113,12 @@
           </div>
           <div class="w-6/12 m-8 flex justify-center flex-col">
             <h1
-              class="font-extrabold text-7xl text-darkbeige text-center pb-0.5"
+              class="font-extrabold text-7xl text-darkbeige text-center pb-0.5 max-md:text-lg"
             >
               Finde your Dream Gym
             </h1>
             <p
-              class="text-base font-semibold pt-5 leading-7 text-darkbeige font-montserrat"
+              class="text-base font-semibold pt-5 leading-7 text-darkbeige font-montserrat max-md:text-sm"
             >
               Are you ready to embark on a journey towards a healthier and more
               active lifestyle? Welcome to Max Gym, your ultimate destination
@@ -126,7 +127,7 @@
               covered.
             </p>
             <div class="flex justify-center mt-6">
-              <button class="p-3 bg-darkbeige text-white rounded-lg">
+              <button class="p-3 bg-darkbeige text-white rounded-lg font-semibold">
                 <a href="">Log In</a>
               </button>
             </div>
@@ -479,10 +480,82 @@
       </div>
 
       <!-- ab hier Ummey -->
-      <section></section>
+      <section>
+      <div class="max-h-96 sm:grid-cols-2 lg:grid-cols-3 "> 
+          <h1 class="font-montserrat text-5xl text-center pt-20  font-bold font-montserrat text-brown">Do You Have Any Questions?<br/>Get Help From Us</h1>
+      </div>
+        
+      <div class="flex gap-1 justify-center p-10 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <img src="1.png"alt=""class="mr-0"/>
+        <p class="font-bold font-montserrat text-base mr-10">Chat live with our support team</p>
+        <img src="1.png"alt=""/>
+        <p  class="font-bold font-montserrat text-base">Browse our FAQ</p>
+      </div class="">
+      <form class="flex justify-center gap-3 p-30 "> 
+        <img src="mail.png" alt="mail"/>
+        <input type="email" id="usermail" placeholder="Enter your email address...." class="rounded-lg font-montserrat text-brown bg-mybrown pr-40 mr-1" required/>
+        <button class="rounded-lg bg-black text-white px-10 py-3 font-bold">
+        Submit
+        </button>
+      </form>
+      </div>
+    </section>
     </main>
-    <footer>
-      <section></section>
-    </footer>
+    <footer class="bg-mybrown p-6 text-brown p-8 my-20">
+     <div class="container mx-auto flex flex-wrap justify-around leading-8 max-h-96 font-bold sm:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <img src="" alt=""/>
+          <h2 class="text-xl mb-4 font-bold">Transform your life <br> With Max Gym</h2>
+        </div>
+        <div>
+          <h2 class="text-xl mb-4">ABout</h2>
+          <ul class="">
+            <li><a href="#"class="hover:bg-slate-600 p-1">Our Story</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Careers</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Our Team</a></li>
+            <li><a href="#"class="hover:bg-slate-600 p-1">Resources</a></li>
+          </ul>
+       </div>
+      <div>
+        <h2 class="text-xl mb-4">Support</h2>
+        <ul class="">
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">FAQ</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Contract Us</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Help Center</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Terms Of ervices</a></li>
+        </ul>
+      </div> 
+      <div>
+        <h2 class="text-xl mb-4">Find Us</h2>
+        <ul class="">
+          
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Events</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Locations</a></li>
+          <li class=""><a href="#"class="hover:bg-slate-600 p-1">Newsletter</a></li>
+        </ul>
+      </div>
+      <div> 
+        <h2 class="text-xl mb-4">Our Social</h2>
+        <ul class="">
+          <ul class="flex">
+            <i class="fa-brands fa-instagram"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1">instagram</a></li>
+          </ul>
+          <ul> 
+            <i class="fa-brands fa-facebook"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1"></i>Facebook</a></li>
+          </ul> 
+          <ul> 
+            <i class="fa-brands fa-x-twitter"></i>
+            <li class=""><a href="#"class="hover:bg-slate-600 p-1">Twitter(X)</a></li>
+          </ul>
+         
+
+        </ul>
+      </div>  
+       
+      </div>
+      </footer>
   </body>
 </html>
